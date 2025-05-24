@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Centrada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilo adicional para asegurar que el cuerpo ocupe toda la altura si es necesario */
+        /* Tailwind con h-screen en el body usualmente maneja esto bien */
+    </style>
+</head>
+<body class="h-screen m-0 flex justify-center items-center bg-gray-100 font-sans">
+
+    <div class="text-center p-4">
+
+        <img src="media/cat.png"
+             alt="nina"
+             class="block mx-auto border-2 border-gray-300 rounded-lg shadow-xl w-[376.25px] h-auto"
+             onerror="this.onerror=null; this.src='https://placehold.co/376x504/cccccc/333333?text=Error+al+cargar+imagen';">
+             <p class="font-bold italic text-center mt-4 mx-auto max-w-[376.25px] text-gray-700 text-lg">
+            juanjo.site
+        </p>
+        <!--
+            font-bold: Texto en negrita ("gordita")
+            italic: Texto en cursiva ("italica")
+            text-center: Alineación central del texto dentro del párrafo
+            mt-4: Margen superior (1rem = 16px), un poco más de espacio
+            mx-auto: Centra el bloque de párrafo si es más estrecho que su contenedor
+            max-w-[376.25px]: Ancho máximo igual al de la imagen para que el texto se ajuste a sus bordes
+            text-gray-700: Color de texto gris oscuro para buena legibilidad
+            text-lg: Tamaño de fuente un poco más grande para legibilidad
+        -->
+    </div>
+
+</body>
+</html>
